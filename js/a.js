@@ -72,14 +72,27 @@ document.getElementById('listcoltrois').innerHTML=tabcoltrois;
 }
 }//end funct
 
+
+
+function aphasort(a,b) {                             //Fonction de classement qui sera utilisé par sort
+	if (a[1] < b[1]) {
+       return -1;
+   } 
+   else if (a[1] > b[1]) {
+     return 1;
+   }
+   else {
+    return 0;
+   }
+}
+
 function alpha(){
 var wholeliste = liste.concat(liste2);///merges liste and liste2
 var tabcolun="classement";
 var tabcoldeux="NOM Prénom";
 var tabcoltrois="identifiant";
-wholeliste.sort();
+wholeliste.sort(aphasort);
 for (var x = 0; x < wholeliste.length; x++) {
-
 tabcolun+="<li>"+wholeliste[x][0]+"</li><br/>";
 tabcoldeux+="<li>"+wholeliste[x][1]+"</li><br>";
 tabcoltrois+="<li>"+wholeliste[x][2]+"</li><br>";
