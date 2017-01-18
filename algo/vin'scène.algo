@@ -1,0 +1,9 @@
+Algorithme AjoutCase
+Constante (SEUIL: entier)<~200
+Variable numCase:entier
+Début
+	Pour numCase Allant de 1 A SEUIL Au pas de 1
+	 	Faire Afficher("<li>",numCase,"</li>")
+	 	
+	 	Fpour 
+Fin

@@ -1,0 +1,16 @@
+body{padding: 0;
+margin: 0;}
+#red
+{width: 100%;
+height:30px;
+background-color: #9D0C26;
+padding-top: 0px;
+margin-top: 0px;
+}
+#container
+{display: flex;
+justify-content: space-around;}
+h1{text-align: center;
+color: #9ECB6A;}
+#con{display:flex;}
+li{list-style: none;}
