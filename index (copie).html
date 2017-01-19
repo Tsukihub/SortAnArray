@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style/style.css">
+<meta charset="utf-8">
+	<title>Les resultats-8eme-edition-2016</title>
+</head>
+<body>
+	<div id="red"></div>
+	<h1>Les resultats-8eme-edition-2016</h1>
+
+	<div id="container">
+		<img src="img/logo.png"/>
+		<form method="post" action="traitement.php">
+    		<p>
+        <label for="pseudo"></label>
+        <input type="text" name="pseudo" id="pseudo" placeholder="Recherche" size="30" maxlength="10" />
+   		    </p>
+		</form>
+</div>
+<noscript><p>Active ton javascript.</p></noscript>
+
+<input type="button" name="winner" value="Classement" onclick="Bywinner()">
+<input type="button" name="winner" value="identifiant"onclick="tri()">
+<input type="button" name="winner" value="Nom"onclick="alpha()">
+
+<table>
+	<tbody id="Classement"></tbody>
+</table>
+
+
+ <script type="text/javascript" src="js/correction.js"></script>
+ 
+</body>
+
+</html>
